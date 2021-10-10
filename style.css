@@ -1,11 +1,11 @@
 /** Font **/
-@import url(fonts.css);
+@import url(css/fonts.css);
 
 /** Variebles **/
-@import url(partials/_variables.css);
+@import url(css/partials/_variables.css);
 
 /** Global **/
-@import url(partials/_global.css);
+@import url(css/partials/_global.css);
 
 
 html
@@ -41,10 +41,6 @@ html
 
 
 /** Start Banner Area Design **/
-.main .site-banner
-{
-    background: url(../img/banner/home-banner.png) no-repeat 0 50%;
-}
 .main .site-banner .site-title h3
 {
     padding-top: 35%;

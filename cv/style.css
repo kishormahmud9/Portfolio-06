@@ -1,0 +1,384 @@
+/******** Google Font ********/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+body
+{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/******** Back Page ********/
+.back-page
+{
+    position: relative;
+    margin: 20px
+}
+.back-page a
+{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    background: #444;
+    font-size: 15px;
+    font-weight: 400;
+}
+.back-page a:hover
+{
+    color: #444;
+    background: #fff;
+    transition: 0.4s ease-in;
+}
+
+/******** Container ********/
+.container
+{
+    position: relative;
+    width: 100%;
+    margin: 50px;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+/******** Left-Side ********/
+.container .left-side
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.profile-text
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    Padding-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profile-text .img-box
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-text .img-box img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-text h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profile-text h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+/******** Contact Info ********/
+.contact-info
+{
+    padding-top: 40px;
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact-info ul
+{
+    position: relative;
+}
+.contact-info ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact-info ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contact-info ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+/******** Education ********/
+.contact-info.education li
+{
+    margin-bottom: 15px;
+}
+.contact-info.education li h5:nth-child(1)
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contact-info.education li h5:nth-last-child(1)
+{
+    color: #fff;
+    font-weight: 300;
+}
+.contact-info.education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+.contact-info.education h4
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+/******** Language ********/
+.contact-info.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.contact-info.language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(1, 150, 170);
+}
+
+
+/******** Right-Side ********/
+.container .right-side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+/******** Profile ********/
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: #444;
+}
+
+/******** Experiance ********/
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year-company
+{
+    min-width: 150px;
+}
+.about .box .year-company h5
+{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.about .box .text h4
+{
+    text-transform: uppercase;
+    color: rgb(1, 150, 170);
+    font-size: 16px;
+}
+
+/******** Skills ********/
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4
+{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+/******** Interest ********/
+.interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa
+{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+}
+
+
+/******** Media Query For Medium Device ********/
+@media (max-width: 990px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+/******** Media Query For Small Device ********/
+@media (max-width: 667px)
+{
+    .profile-text h2
+    {
+        font-size: 20px
+    }
+    .profile-text h2 span
+    {
+        font-size: 18px;
+    }
+    .title
+    {
+        font-size: 0.9em;
+    }
+    .contact-info .text,
+    .contact-info .icon
+    {
+        font-size: 0.8em;
+    }
+    h5
+    {
+        font-size: 12px;
+    }
+    h4
+    {
+        font-size: 13px;
+    }
+    .title2
+    {
+        font-size: 0.9em;
+    }
+    p
+    {
+        font-size: 14px;
+    }
+    .about .box
+    {
+        flex-direction: column;
+    }
+    .about .box .year-company
+    {
+        margin-bottom: 5px;
+    }
+    .about .box .text h4
+    {
+        font-size: 14px;
+    }
+    .about .box .text p
+    {
+        font-size: 12px;
+    }
+    .skills .box
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box h4
+    {
+        font-size: 13px;
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul li
+    {
+        font-size: 13px;
+    }
+    .back-page a
+    {
+        font-size: 13px;
+    }
+    
+}
